@@ -1,0 +1,11 @@
+- name: create 
+  hosts: Blades
+  tasks:
+    - name: create folders
+      command: mkdir -p ~/Project3/lamost_dib/output/cold/dib5780  ~/Project3/lamost_dib/output/cold/dib6614 
+
+
+#    - name: copy
+#      copy:
+#        src: ~/Apps/frp 
+#        dest: ~/Apps/

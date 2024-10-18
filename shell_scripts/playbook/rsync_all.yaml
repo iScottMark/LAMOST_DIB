@@ -1,0 +1,11 @@
+- name: synchronize the `lamost_dib` folder to each blade server
+  hosts: Blades
+  tasks:
+  - name: rsync 
+    synchronize:
+      src: ~/Project3/lamost_dib/
+      dest: ~/Project3/lamost_dib
+      archive: yes
+      recursive: yes
+      delete: yes
+      rsync_opts: "--verbose --exclude='output*' --exclude='data'"

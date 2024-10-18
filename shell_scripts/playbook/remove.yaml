@@ -1,0 +1,7 @@
+- name: remove
+  hosts: Blades
+  tasks:
+    - name: delete files
+      command: rm -r ~/Project3/lamost_dib/output
+    # - name: create folders
+    #   command: mkdir -p ~/Project3/All/output_3/cold/dib6614/

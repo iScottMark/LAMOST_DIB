@@ -1,0 +1,5 @@
+- name: link
+  hosts: Blades
+  tasks:
+    - name: soft link to data folder
+      command: ln -s ~/DataSet/dib/cold_subfolder ~/Project3/lamost_dib/data

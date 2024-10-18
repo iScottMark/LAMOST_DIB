@@ -1,0 +1,9 @@
+- name: COMBINE DIB5780 
+  hosts: Blades
+  tasks:
+    - name: combine the log
+      command: /home/maxiaoxiao/miniconda3/bin/python3 ~/Project3/scripts/combine_log.py ~/Project3/lamost_dib/output/cold/dib5780
+    - name: combine the h5
+      command: /home/maxiaoxiao/miniconda3/bin/python3 ~/Project3/scripts/combine_h5.py ~/Project3/lamost_dib/output/cold/dib5780
+    - name: combine the csv 
+      command: /home/maxiaoxiao/miniconda3/bin/python3 ~/Project3/scripts/combine_csv.py ~/Project3/lamost_dib/output/cold/dib5780
