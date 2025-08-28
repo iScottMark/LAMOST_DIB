@@ -1,0 +1,45 @@
+# My personal gitignore file
+# shell scripts for serial processing in company with tmux
+shell_scripts/
+# ansible playbooks for automation on multiple servers
+ansible_playbooks/
+# outputs for results when running the python scripts in the `scripts` folder
+outputs/
+
+
+
+# Other common files
+# Python
+__pycache__/
+*.py[codz]
+
+# vscode
+.vscode/
+
+# Mac OS, refer to https://github.com/github/gitignore/blob/main/Global/macOS.gitignore
+# general
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# icon must end with two \r
+Icon
+
+# thumbnails
+._*
+
+# files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk

@@ -1,0 +1,25 @@
+# DIB 5780
+dib_region:
+  xmin: 5755
+  xmax: 5855
+  step: 0.8
+
+# DIB 6614
+# dib_region:
+#   xmin: 6590
+#   xmax: 6690
+#   step: 0.8
+
+similar_region: # Region used to compute the similarity
+  xmin: 4500
+  xmax: 7500
+  step: 1
+
+mask_region_list: # Any region in this list should be within the similar_region
+  - [6540, 6600]  # H-alpha
+  - [4830, 4890]  # H-beta
+#  - [4320, 4360]  # H-gamma
+#  - [4080, 4120]  # H-delta
+  - [5770, 5807]  # DIB 5780 & 5797
+  - [6604, 6624]  # DIB 6614
+  - [6273, 6293]  # DIB 6283

@@ -1,0 +1,9 @@
+threshold:
+  delta_teff: 100  # K
+  delta_logg: 0.5  # dex
+  delta_feh: 0.2   # dex
+
+neighbor:
+  num_lo: 100      # the lowest number of neighbor spectra
+  num_hi: 1000     # the highest number of neighbor spectra
+  num_ratio: 0.25  # range: [0, 1]

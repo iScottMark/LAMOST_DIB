@@ -1,0 +1,19 @@
+name: dib
+channels:
+  - conda-forge
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge
+dependencies:
+  - python=3.10
+  - numpy=2.2
+  - pandas=2.2
+  - scipy=1.15
+  - astropy=6.1
+  - healpy=1.18
+  - emcee=3.1
+  - matplotlib=3.10
+  - ipykernel=6.29
+  - tqdm=4.67
+  - bison=3.8
+  - pip:
+    - h5py==3.13.0
+    - uncertainties==3.2.3

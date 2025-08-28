@@ -1,0 +1,33 @@
+# Define the path of the data and workspace
+PATH:
+  # Input Catalog
+  data_dir: datasets/lamost_lrs_dr10_v1.0/                   # relative to root
+  cool_catalog_path: inputs/cool_lamost_with_Gaia_ebv.fits   # relative to root
+  hot_catalog_path: inputs/hot_lamost_with_ebv_snr_gt50.fits # relative to root
+
+  # Output Results
+  # DIB 5780
+  output_cool_dir: outputs/cool/dib5780/     # relative to root
+  output_hot_dir: outputs/hot/dib5780/       # relative to root
+  output_prefix: dib5780                     # the prefix of the output files
+
+  # DIB 6614
+  # output_cool_dir: output/cool/dib6614/    # relative to root
+  # output_hot_dir: output/hot/dib6614/      # relative to root
+  # output_prefix: dib6614                   # the prefix of the output files
+
+
+
+# Filter conditions
+FILTER:
+  common:       # the common filter conditions for both target and reference spectra samples
+    teff_err_limit: 100
+    logg_err_limit: 0.2
+    feh_err_limit: 0.1
+    rv_err_limit: 10
+  reference:    # the reference sample
+    snrr_lo: 50
+    ebv_up: 0.03    # the upper limit of E(B-V)
+    b_lo: 60        # the lower limit of galactic latitude, b, in degree
+  target:       # the target sample
+    snrr_lo: 100
