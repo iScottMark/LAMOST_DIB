@@ -1,7 +1,7 @@
 # Define the path of the data and workspace
 PATH:
   # Input Catalog
-  data_dir: datasets/lamost_lrs_dr10_v1.0/                   # relative to root
+  data_dir: datasets/demo_lamost_lrs_dr10_v1.0/              # relative to root
   cool_catalog_path: inputs/cool_lamost_with_Gaia_ebv.fits   # relative to root
   hot_catalog_path: inputs/hot_lamost_with_ebv_snr_gt50.fits # relative to root
 

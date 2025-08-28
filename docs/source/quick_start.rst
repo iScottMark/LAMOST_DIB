@@ -34,7 +34,7 @@ And then, create a ``mamba`` (recommended) or ``conda`` environment with the req
     mamba activate dib
 
 
-Or using `conda` with the similar commands:
+Or using ``conda`` with the similar commands:
 
 .. code-block:: bash
 
